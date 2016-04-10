@@ -1,0 +1,73 @@
+& {
+    #platui > #media;
+    #platui > #mixins;
+    #platui > #variables;
+
+    [plat-control="navbarcontrol"] {
+        
+    }
+}
+#platui {
+    #grid {
+        @base-percent: 100%;
+        @num-columns: 12;
+        @column-padding: 0px;
+    }
+}
+
+@import "main.less";
+@navbarheight: 80px;
+
+.navbar {
+    position: fixed;
+    z-index: 25;
+    width: 100%;
+    height: @navbarheight;
+    background-color: white; 
+    color: @brand-grey;
+    box-shadow: 0px 2px 2px @brand-grey;
+    .brand{
+     float: left;
+     height: 75px;
+     #brandimg{
+         height: 75px;
+         width: 270px;  
+     }   
+    }
+    .pagelinks{
+        height: @navbarheight;
+        .pages{
+            height: @navbarheight;
+            text-align: right;
+            margin: 0;
+            li{
+                height: @navbarheight;
+                line-height: @navbarheight;
+                vertical-align: center;
+                display: inline-block;
+                text-transform: uppercase;
+                font-size: 1.8em;
+                list-style: none;
+                overflow: auto;
+                text-align: center;
+                padding: 0 15px;
+                }
+            li:hover {
+                color: @brand-primary;
+            }
+        }
+    }
+    .sitelinks {
+        background-color: #DDD;
+        text-align: center;
+        height: @navbarheight;
+        line-height: @navbarheight;
+        .linkimg{
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            margin: 23px 10px 0px 10px;    
+        }
+    }
+}
+

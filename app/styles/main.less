@@ -1,11 +1,12 @@
 @import '../../node_modules/platypusui/dist/platypus';
 
-@import '../src/viewcontrols/about/about.vc.less';
-@import '../src/viewcontrols/home/home.vc.less';
-@import '../src/viewcontrols/howtoplay/howtoplay.vc.less';
-@import '../src/viewcontrols/overview/overview.vc.less';
-@import '../src/viewcontrols/promotions/promotions.vc.less';
-@import '../src/viewcontrols/videos/videos.vc.less';
+
+@brand-primary: #2995c7;
+@brand-secondary: #1c2147;
+@brand-secondary-text: white;
+@brand-text: black;
+@brand-grey: #A6A8AB;
+
 
 .about{
     height: 15em;
@@ -27,3 +28,12 @@
     background-size: cover;
     background-image: url('/images/howtoplay/how-to-play-hero.jpg')
 }
+
+@import '../src/templatecontrols/navbarcontrol/navbarcontrol.tc.less';
+
+@import '../src/viewcontrols/about/about.vc.less';
+@import '../src/viewcontrols/home/home.vc.less';
+@import '../src/viewcontrols/howtoplay/howtoplay.vc.less';
+@import '../src/viewcontrols/overview/overview.vc.less';
+@import '../src/viewcontrols/promotions/promotions.vc.less';
+@import '../src/viewcontrols/videos/videos.vc.less';

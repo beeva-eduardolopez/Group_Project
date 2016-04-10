@@ -1,3 +1,6 @@
+@import "main.less";
+
+
 & {
     #platui > #media;
     #platui > #mixins;
@@ -7,112 +10,78 @@
 
     }
 }
-// #platui {
-//     #Navbar {
-//         #platui > #variables;
-
-//     /// =========== Navbar Colors =========== ///
-
-//         @background-color: @brand-primary;
-//         @color: @white;
-
-//     /// =========== Navbar Dimensions =========== ///
-
-//         @height: 4em;
-//         @z-index: 100;
-//         @left-percentage: 100% / 3;
-//         @center-percentage: 100% / 3;
-//         @right-percentage: 100% / 3;
-//         @padding: 0;
-//         @item-padding: 0 1.5em;
-
-//     /// =========== Navbar Properties =========== ///
-
-//         @font-size: 125%;
-//         @border-top: none;
-//         @border-right: none;
-//         @border-bottom: none;
-//         @border-left: none;
-//         @box-shadow: 0px 0px 2px 1px lighten(@black, 10%);
-
-//     /// =========== Variable Navbar Styles =========== ///
-
-//         .plat-navbar(@prop; @value) {
-//             // background-color
-//             // color
-//             // height
-//             // z-index
-//             // left-percentage
-//             // center-percentage
-//             // right-percentage
-//             // padding
-//             // item-padding
-//             // font-size
-//             // border-top
-//             // border-right
-//             // border-bottom
-//             // border-left
-//             // box-shadow
-//         }
-//     }
-// }
-
 #platui {
-    #Drawer {
-        #dependencies {
-            @length-default: 80%;
-        }
-
-        #platui > #variables;
-        #platui > #Drawer > #dependencies;
-
-    /// =========== Drawer Colors =========== ///
-
-        @color: @white;
-        @background-color: @neutral-color;
-
-    /// =========== Drawer Lengths =========== ///
-
-        @length-left: @length-default;
-        @length-right: @length-default;
-        @length-top: @length-default;
-        @length-bottom: @length-default;
-
-    /// =========== Drawer Root Shadow =========== ///
-
-        @shadow-left: -2px 0px 10px 0px fadeout(@black, 30%);
-        @shadow-right: 2px 0px 10px 0px fadeout(@black, 30%);
-        @shadow-top: 0px -2px 10px 0px fadeout(@black, 30%);
-        @shadow-bottom: 0px 2px 10px 0px fadeout(@black, 30%);
-
-    /// =========== Drawer Root Transition =========== ///
-
-        @transition-time: 300ms;
-        @transition-function: ease-out;
-
-    /// =========== Variable Drawer Styles =========== ///
-
-        .plat-drawer(@prop; @value) {
-            // length-default
-                // affects length-left, length-right, length-top, length-bottom
-
-            // color
-            // background-color
-            // length-left
-            // length-right
-            // length-top
-            // length-bottom
-        }
-
-    /// =========== Drawer Controller Root Element Styles =========== ///
-
-        .plat-drawer-root(@prop; @value) {
-            // shadow-left
-            // shadow-right
-            // shadow-top
-            // shadow-bottom
-            // transition-time
-            // transition-function
-        }
+    #grid {
+        @base-percent: 100%;
+        @num-columns: 12;
+        @column-padding: 0px;
     }
+}
+
+@container: 7%;
+@box-height: 80px;
+
+.container {
+    position: fixed;
+    // overflow: visible;  used for parallax, optional
+    width: 100%;
+    height: 850px;
+}
+
+
+.layer-1 {
+    top: 15%;
+    color: white;
+    text-align:center;     
+    img {
+        bottom: 0;
+        height: 100%;
+        margin-left: @container;
+        margin-right:@container;
+    }
+    h1{
+        line-height: @box-height;
+        font-size: 3.4em;
+        padding: 0;
+        
+    }
+    p{
+        font-size: 1.2em;
+        padding: 8% @container 5% @container;
+    
+    }
+    button {
+
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+        width: 35%;
+        height: 60px;
+    }
+    button:hover{
+        background-color:@brand-primary;
+        color:@brand-secondary-text;
+    }   
+}
+.background1 {
+    top: 50px;
+    z-index: 0;
+    background-image: url("../../images/home/coversharks-web-hero.jpg");
+    min-height: 800px;
+}
+
+#areyouin {
+    box-sizing: border-box;
+    background-color: @brand-primary;
+    text-align: center;
+    height: @box-height;
+    margin-left: @container;
+    margin-right: @container;
+    top: 0;
+
+}
+
+#brand {
+    height: 60px;
+    width: auto;
 }
