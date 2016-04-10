@@ -1,11 +1,55 @@
 @import '../../node_modules/platypusui/dist/platypus';
-
+// Global Brand Variables
 @brand-primary: #2995c7;
 @brand-secondary: #1c2147;
+@brand-tertiary: #3DB893;
+@brand-text: #A6A8AB;
 @brand-secondary-text: white;
-@brand-text: black;
-@brand-grey: #A6A8AB;
+@containerpad: 7%;
+@borderradius: 5px;
 
+//Font faces Roboto and WorkSans
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Condensed.otf);
+    src: url(../fonts/Roboto/Roboto-Condensed.ttf);
+    src: url(../fonts/Roboto/Roboto-Condensed.woff); 
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-BoldCondensed.otf);
+    src: url(../fonts/Roboto/Roboto-BoldCondensed.ttf);
+    src: url(../fonts/Roboto/Roboto-BoldCondensed.woff);
+    font-weight: bold;
+}
+@font-face {
+    font-family: WorkSans;
+    src: url(../fonts/WorkSans/WorkSans-Regular.otf);
+    src: url(../fonts/WorkSans/WorkSans-Regular.ttf);
+    src: url(../fonts/WorkSans/WorkSans-Regular.woff);
+    font-weight: thin;
+}
+@font-face {
+    font-family: WorkSans;
+    src: url(../fonts/WorkSans/WorkSans-SemiBold.otf);
+    src: url(../fonts/WorkSans/WorkSans-SemiBold.ttf);
+    src: url(../fonts/WorkSans/WorkSans-SemiBold.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url(../fonts/WorkSans/WorkSans-ExtraBold.otf);
+    src: url(../fonts/WorkSans/WorkSans-ExtraBold.ttf);
+    src: url(../fonts/WorkSans/WorkSans-ExtraBold.woff);
+    font-weight: bolder;
+}
+
+// Global container padding
+.container {
+    margin-left: @containerpad;
+    margin-right: @containerpad;
+}
 .about{
     height: 15em;
     background-size: cover;
@@ -41,3 +85,11 @@
 @import '../src/viewcontrols/overview/overview.vc.less';
 @import '../src/viewcontrols/promotions/promotions.vc.less';
 @import '../src/viewcontrols/videos/videos.vc.less';
+
+
+
+//added viewport class to push content out from under navbar
+
+.viewport{
+    padding-top: @navbarheight;
+}
