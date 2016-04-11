@@ -1,17 +1,19 @@
 <section class="hero">
     <div class="container">
         <div class="row">
-            <div class="layer layer-1">
-                <div class="col-tab-6 herotext">
+            <div class="layer">
+                <div class="col-tab-7 herotext">
                     <div id="areyouin">
                         <h1>ARE YOU IN?</h1>
                     </div>
                     <p>Data analytics, skill, and strategy all in the ultimate in-game experience. No drafts, No Salary Cap,
                         No Hassle. CoverSharks is primed to be the industry pioneer in a new genre of game play: Team Fantasy
                         Sports.</p>
-                    <plat-button class="btn btn-primary">MORE INFO</plat-button>
+                    <plat-link plat-options="{ view: 'about-vc' }">
+                        <plat-button class="btn btn-primary">MORE INFO</plat-button>
+                    </plat-link>
                 </div>
-                <div class="col-tab-6 phoneimg">
+                <div class="col-tab-5 phoneimg">
                     <img id="phn" src="../../images/home/hero-phone.png">
                 </div>
             </div>
@@ -38,7 +40,7 @@
             <plat-button id="hero2button">HOW TO PLAY</plat-button>
         </div> 
         <div class="hero2img col-tab-6">
-            <img src="../images/home/tilted-phone.png" alt="tiltedphone">  
+            <img class="phone" src="../images/home/tilted-phone.png" alt="tiltedphone">  
         </div>
     </div>
 </section>
@@ -46,25 +48,32 @@
     <div class="container">
         <h1>Game Features</h1>
         <div class="featurewindows">
-            <div class="col-dsk-4 window">
+            <div class="col-tab-4 window">
                 <img src="../images/home/app-image-1-01.png">
-                <h4>In-Game Experience</h4>
-                <p>Scores of each game are updated in real-time to offer players the ultimate in-game experience.</p>
+                <div class="featurestext">
+                    <h4>In-Game Experience</h4>
+                    <p>Scores of each game are updated in real-time to offer players the ultimate in-game experience.</p>
+                </div>
             </div>
-            <div class="col-dsk-4 window">
+            <div class="col-tab-4 window">
                 <img src="../images/home/app-image-2-04.png">
-                <h4>Data and Analytics</h4>
-                <p>As an integral part of game play, CoverSharks offers players a wide variety of data and analytics.</p>
+                <div class="featurestext">
+                    <h4>Data and Analytics</h4>
+                    <p>As an integral part of game play, CoverSharks offers players a wide variety of data and analytics.</p>
+                </div>
             </div>
-            <div class="col-dsk-4 window">
+            <div class="col-tab-4 window">
                 <img src="../images/home/app-image-3-05.png">
-                <h4>Skill and Strategy</h4>
-                <p>Game odds are updated daily giving players an added level of skill and strategy. <span class="blank">whitespacewhitespacewhitespace</span></p>
+                <div class="featurestext">
+                    <h4>Skill and Strategy</h4>
+                    <p>Game odds are updated daily giving players an added level of skill and strategy. <span class="blank">whitespacewhitespacewhitespace</span></p>
+                </div>
             </div>
         </div>
         <div class="contactarea">
             <h4>Enter your email for more information and updates about CoverSharks</h4>
-            <textarea name="Email" id="email" cols="30" rows="1" placeholder="Email"></textarea>
+            <plat-input type="Email" placeholder="Email"></plat-input>
+            <plat-button>SUBSCRIBE</plat-button>        
         </div>
         <div class="space">
         </div>
