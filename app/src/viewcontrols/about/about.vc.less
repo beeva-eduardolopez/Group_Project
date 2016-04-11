@@ -34,6 +34,7 @@
 .story{
     padding: 3em 0;
     height: 30em;
+    background-color: @color-background 
 }
 
 .story-image{
@@ -74,6 +75,7 @@
 
 .team{
     padding: 1em 18%;
+    background-color: @color-background 
 }
 
 .team-text{
@@ -102,4 +104,37 @@
     
       text-align: center;
       color: @brand-text;
+}
+
+.img-bios{
+    
+    position: relative;
+    top: 9em;
+    left: -3em;
+    width: 8em;
+    z-index: 100;
+     
+}
+
+.bios-title{
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding: 1em 0;
+    background-color: #2995c7;
+    height: 8em;
+    
+    h3{
+        color:@brand-secondary-text;
+    }
+    h4{
+        color:@brand-secondary-text;
+    }
+}
+
+.bios-text{
+    p{
+        background-color: @brand-secondary-text;
+        padding-left: 2em;
+        padding-right: 2em; 
+    }
 }
