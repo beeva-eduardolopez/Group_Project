@@ -1,3 +1,10 @@
+@import "main.less";
+
+* {
+    font-family: WorkSans;
+    font-weight: thin;
+}
+
 & {
     #platui > #media;
     #platui > #mixins;
@@ -6,6 +13,11 @@
     [plat-control="about-vc"] {
 
     }
+}
+
+.container-story{
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .about{
@@ -21,6 +33,7 @@
 
 .story{
     padding: 3em 0;
+    height: 30em;
 }
 
 .story-image{
@@ -42,10 +55,51 @@
 }
 .email-input{
     width: 100%;
+    border-radius: @borderradius;
+    margin-top: 0.5em;
+}
+
+.subscribe{
+    margin-left: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: black;
 }
 
 .about-subscribe{
     background-color:#2d97d2;
     padding: 1em 18%;
+    height: 7em;
 }
 
+.team{
+    padding: 1em 18%;
+}
+
+.team-text{
+    
+    h2{
+        color: @brand-tertiary;
+    }
+    
+    p{
+        color: @brand-text;
+    }
+    
+}
+
+.team-fantasy{ 
+    
+     padding: 1em 18%;
+     
+     h2{
+        color: @brand-tertiary;
+    }
+
+}
+
+.text-center-fantasy{
+    
+      text-align: center;
+      color: @brand-text;
+}
