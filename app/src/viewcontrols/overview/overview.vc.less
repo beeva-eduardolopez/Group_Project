@@ -10,6 +10,14 @@
 
 // @import 'main.less';
 
+
+.text-container {
+    text-align: center;
+    
+    h5 {
+        color: #93979a;
+    }
+}
 .numberCircle {
     display: inline-block;
     border-radius: 50%;
@@ -22,50 +30,56 @@
     font-size: 1.1em;
 }
 
-.overview-container{
-    background-color: #f1f2f2;
-    // padding: 1em;
-    width: 100%;
+.overview-item {
+    display: inline-block;
+}
     
+.overview{
+    background-color: #f1f2f2;
+    margin-top: 15em;
+    
+    .item {
+        display: inline-block;
+    }
     h2{
         text-align: center;
         color: @brand-tertiary;
     }
-    .overview-item{
-        display: inline-block;
-    }
     
-    p{
-    font-family: WorkSans;
-    src: url(../fonts/WorkSans/WorkSans-Regular.otf);
-    src: url(../fonts/WorkSans/WorkSans-Regular.ttf);
-    src: url(../fonts/WorkSans/WorkSans-Regular.woff);
+    .overview-container {
+        width: 75%;
+        margin-left: 15em;
     }
 }
 
 .subscribe{
-    height: 500px;
-    background-color: white;
+    
     margin-bottom: 1em;
+    background-color: white;
     
     .btn{
-        background-color: 2b2c2e;
+        background-color: #2b2c2e;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        // display: block;
     }
 }
 
-// // .subscribe-row{
-// //     img{
-// //         height: 450px;
-// //         width: 350px;
-// //     }
-// }
+.subscribe-row{
+    img{
+        float: right;
+    }
+}
 
-// .text-container{
-//     text-align: center;
-//     width: 400px;
+.text-container{
+    text-align: center;
+    width: 80%;
     
-//     h4{
-//         font-family: WorkSans;
-//         font-weight: bold;
-//     }
-// }
+    h4{
+        font-family: WorkSans;
+        font-weight: bold;
+    }
+}
