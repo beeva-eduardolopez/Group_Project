@@ -8,9 +8,6 @@
     }
 }
 
-// @import 'main.less';
-
-
 .text-container {
     text-align: center;
     margin-left: 2em;
@@ -40,37 +37,60 @@
 }
 
 
-.overview-item {
-    display: inline-block;
-    
-}
     
 .overview{
     background-color: #f1f2f2;
-    margin-top: 15em;
+    margin-top: 5em;
     
     .item {
         display: inline-block;
         width: 80%; 
     }
     h2{
-        text-align: center;
         color: @brand-tertiary;
+        font-family: WorkSans;
+        font-weight: bolder;
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    h3 {
+        display: inline-block;
+        font-family: Roboto;
+        color: #343434;
+        text-align: left;
+        font-size: 2em;
+        padding-left: 3px;
+        padding-top: 4px;
+    }
+    
+    p{
+        color: #95989b;
+        font-weight: regular;
     }
     
     .overview-container {
-        width: 75%;
+        padding-bottom: 5em;
         margin-left: 15em;
     }
 }
 
 .overview-list-image {
+    
+    margin-top: 5em;
+    
+    h3 {
+        color: #2995c7;
+        font-size: 3em;
+        font-family: WorkSans;
+        font-weight: bold;
+    }
     color: @brand-tertiary;
 }
 
 .subscription{
     background-color: #ffffff;
-    margin-bottom: 1em;
+    margin-right: 15em;
     
     
     .btn{
@@ -80,7 +100,6 @@
         margin: 0;
         padding: 0;
         text-align: center;
-        // display: block;
     }
 }
 
@@ -104,10 +123,7 @@
     margin-top: 8em;
     margin-bottom: 0;
     text-align: center;
-    
-    .btn {
-        // margin-top: 1em;
-    }
+
     
     .emailInput {
         width: 85%;
@@ -126,15 +142,18 @@
 }
 
 .numberCircle {
+    font-family: WorkSans;
+    font-weight: bolder;
     display: inline-block;
     border-radius: 50%;
     width: 36px;
     height: 36px;
-    padding: 5px;
+    // padding: 1em;
     background: #2995c7;
     color: white;
     text-align: center;
-    font-size: 1.1em;
+    line-height: 36px;
+    font-size: 1em;
 }
 
 #contests {
