@@ -54,7 +54,40 @@
                         <p>Through April 17th</p>
                         <p><strong>Auburn vs. Alabama A-Day Promotion Free giveaways at on-site promotions</strong></p>
                     </p>
-                    <plat-button class="subscribe">REGISTER</plat-button>
+
+                    <plat-button class="subscribe" plat-tap="toggleModal()">REGISTER</plat-button>
+
+                    <!-- The Modal -->
+                    <plat-modal plat-options="{ transition: 'fade' }" plat-bind="showModal" class="modal-prompt">
+                        <section class="register-modal prompt-body">
+                            <p plat-tap="hide" class="close">X</p>
+                            <div class="register-modal-container">
+                                <h6 class="text-center blue">Please enter your registration information:</h6>
+                                <div>
+                                    <div class="register-input-container">
+                                        <input type="text" placeholder="First Name" name="First Name" class="main-input" plat-bind="name">
+                                        <input type="text" placeholder="Last Name" name="Last Name" class="main-input" plat-bind="last">
+                                        <input type="email" placeholder="Email" name="email" class="main-input" plat-bind="email">
+                                        <input type="text" placeholder="Zip" name="zip" class="main-input" plat-bind="zip">
+                                        <select plat-bind="team" class="selector">
+                                            <option value="Favorite Team"></option>
+                                            <option value="Alabama">Alabama</option>
+                                            <option value="Auburn">Auburn</option>
+                                        </select>
+                                    </div>
+
+                                    <p class="text-center grey">Enter the above text fields and click register to enter the Free Yeti Cooler or Apple
+                                        Watch Promotion. This promotion runs through April 17. You will receive a confirmation
+                                        email after your registration has been processed.</p>
+                                    <div class="clear">
+                                         <plat-button class="register-button" plat-tap="toggleModal()">REGISTER</plat-button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                    </plat-modal>
+
                 </div>
             </div>
             <div class="register-image col-dsk-6">
