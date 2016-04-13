@@ -1,3 +1,10 @@
+@import "main.less";
+
+* {
+    font-family: WorkSans;
+    font-weight: thin;
+}
+
 & {
     #platui > #media;
     #platui > #mixins;
@@ -6,4 +13,138 @@
     [plat-control="about-vc"] {
 
     }
+}
+
+.container-story{
+    margin-left: 9%;
+    margin-right: 2%
+}
+
+.about{
+    height: 15em;
+    background-size: cover;
+    background-image: url('/images/about/about-hero.jpg');
+}
+
+.text-center{  
+    text-align: center;
+    color: @brand-secondary-text;
+} 
+
+.story{
+    padding: 3em 0;
+    overflow: hidden;
+    background-color: @color-background 
+}
+
+.story-image{
+    padding-right: 2em;
+}
+
+.story-text{
+    
+    padding-left: 2em;
+    
+    h3{
+         font-size: 1.4em;
+         text-transform: uppercase;
+    }
+    
+    h4{
+        color: @brand-text;
+        font-size: 1.4em;
+    }
+
+}
+.email-input{
+    width: 100%;
+    border-radius: @borderradius;
+    margin-top: 0.5em;
+}
+
+.subscribe{
+    margin-left: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: black;
+}
+
+.about-subscribe{
+    background-color:#2d97d2;
+    padding: 1em 18%;
+    height: auto;
+}
+
+.team{
+    padding: 1em 18%;
+    background-color: @color-background 
+}
+
+.team-text{
+    
+    h2{
+        color: @brand-tertiary;
+    }
+    
+    p{
+        color: @brand-text;
+    }
+    
+}
+
+.team-fantasy{ 
+    
+     padding: 1em 18%;
+     
+     h2{
+        color: @brand-tertiary;
+    }
+
+}
+
+.text-center-fantasy{
+    
+      text-align: center;
+      color: @brand-text;
+}
+
+.img-bios{
+    
+    position: relative;
+    top: 9em;
+    left: -3em;
+    width: 10em;
+    z-index: 100;
+     
+}
+
+.bios-title{
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding: 1em 0;
+    background-color: #2995c7;
+    height: 6em;
+    
+    h3{
+        color:@brand-secondary-text;
+    }
+    h4{
+        color:@brand-secondary-text;
+        margin-top: -1em;
+
+    }
+}
+
+.bios-text{
+    p{
+        background-color: @brand-secondary-text;
+        padding: 2em;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+}
+
+.team-bios{
+    margin: 5em 0;
+    //margin-top: -6em;
 }
