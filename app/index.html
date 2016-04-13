@@ -9,9 +9,31 @@
         <title>Group Project</title>
     </head>
     <body>
+        <div>
         <navbarcontrol></navbarcontrol>
         <plat-viewport class="viewport"></plat-viewport>
         <footercontrol></footercontrol>
+        </div>
+        <plat-drawer class="drawer" plat-options="{ position: 'right' }">
+            <plat-link plat-options="{ view: '', isUrl: true }" class="drawer-item">
+                <img class="drawer-icon" src="./images/house.png" />
+                <span>Home</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/howtoplay', isUrl: true }" class="drawer-item">
+                <span>How To Play</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/howtoplay', isUrl: true }" class="drawer-item">
+                <span>How To Play</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/about', isUrl: true }" class="drawer-item">
+                <span>About</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/promotions', isUrl: true }" class="drawer-item">
+                <span>Promotions</span>
+            </plat-link>
+        </plat-drawer>
         <script type="text/javascript" src="dist/app.js"></script>
+        
+        
     </body>
 </html>
