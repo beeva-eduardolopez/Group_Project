@@ -13,25 +13,36 @@
 
 .text-container {
     text-align: center;
+    margin-left: 2em;
+    margin-top: 2em;
+    width: 80%;
+    padding-left: 2em;
+    padding-right: 2em;
     
-    h5 {
-        color: #93979a;
+    h3 {
+        color: #3c3c3c;
+        font-size: 3em;
+        text-transform: uppercase;
+        font-family: WorkSans;
+        font-weight: bolder;
+        // line-heigh
+    }
+    
+    h4 {
+        font-family: WorkSans;
+        font-weight: bolder;
+        margin-top: 0 auto;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 20px;
+        display: block;
     }
 }
-.numberCircle {
-    display: inline-block;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    padding: 5px;
-    background: #2995c7;
-    color: white;
-    text-align: center;
-    font-size: 1.1em;
-}
+
 
 .overview-item {
     display: inline-block;
+    
 }
     
 .overview{
@@ -40,6 +51,7 @@
     
     .item {
         display: inline-block;
+        width: 80%; 
     }
     h2{
         text-align: center;
@@ -52,10 +64,14 @@
     }
 }
 
-.subscribe{
-    
+.overview-list-image {
+    color: @brand-tertiary;
+}
+
+.subscription{
+    background-color: #ffffff;
     margin-bottom: 1em;
-    background-color: white;
+    
     
     .btn{
         background-color: #2b2c2e;
@@ -68,7 +84,7 @@
     }
 }
 
-.subscribe-row{
+.subscription-row{
     img{
         float: right;
     }
@@ -81,5 +97,64 @@
     h4{
         font-family: WorkSans;
         font-weight: bold;
+    }
+}
+
+.mail {
+    margin-top: 8em;
+    margin-bottom: 0;
+    text-align: center;
+    
+    .btn {
+        // margin-top: 1em;
+    }
+    
+    .emailInput {
+        width: 85%;
+        display: block;
+        border: 1px solid #a6a8ab;
+        border-radius: 8px;
+        margin: 2em auto;
+        text-align: center;
+        padding: 0;
+        font-size: 1em;
+        width: 18em;
+        height: 2.5em;
+        background-color: #fff;
+        color: #404042;
+    }
+}
+
+.numberCircle {
+    display: inline-block;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 5px;
+    background: #2995c7;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#contests {
+    display: inline-block;
+    margin-left: 15em;
+    margin-top: 2em;
+    text-align: left;
+    padding: 0;
+    line-height: 2em;
+    h5 {
+        color: @brand-primary;
+        font-family: WorkSans;
+        font-weight: bolder;
+        font-size: 1em;
+    } 
+    p {
+        text-align: left;
+        font-family: Roboto;
+        font-weight: bold;
+        color: #93979a;
+        
     }
 }
