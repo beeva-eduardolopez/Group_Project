@@ -2,7 +2,6 @@
 
 * {
     font-family: WorkSans;
-    font-weight: thin;
 }
 & {
     #platui > #media;
@@ -21,13 +20,16 @@
     }
 }
 @heroheight: 600px;
-@box-height: 80px;
+@box-height: 100px;
 
 
 // First Section : ARE YOU IN?
 .hero {
     background-image: url("../../images/home/coversharks-web-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
+    width: 100vw;
     height: @heroheight;
 }
 
@@ -37,23 +39,20 @@
     height: @box-height;
     margin-left: @containerpad;
     margin-right: @containerpad;
+    width: 80%;
     top: 0;
 
 }
 
-#brand {
-    height: 60px;
-    width: auto;
-}
+
 .layer {
     height: @heroheight;
     color: white;
     text-align:center;   
     .phoneimg{ 
     height: @heroheight;
-    vertical-align: bottom;
     #phn {
-        position: relative;
+        
         margin-top: 30px;
         margin-left: @containerpad;
         margin-right:@containerpad;
@@ -62,8 +61,8 @@
         }
     }
     .herotext{
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 11%;
+        padding-bottom: 9%;
         vertical-align: center;
         h1{
             line-height: @box-height;
@@ -74,11 +73,13 @@
             font-weight: bolder;
             
         }
-        p{
-            font-family: WorkSans;
+        p{  
+            clear: both;
+            font-family: Roboto;
             font-weight: bolder;
             font-size: 1.3em;
             line-height: 2em;
+            margin-top: 10px;
             padding: 2% @containerpad 2% @containerpad;
         
         }
@@ -95,6 +96,7 @@
         button:hover{
             background-color:@brand-primary;
             color:@brand-secondary-text;
+            box-shadow: 3px 3px 3px @brand-secondary;
         }   
     }
 }
@@ -102,12 +104,15 @@
 // Second Section : REGISTER TO WIN
 
 .spacer {
-    height: 400px;
-    max-height: 400px;
     background-color: white;
-    padding: @containerpad;
+    overflow: auto;
+    min-height: 400px;
+    width: 100%;
+    width: 100vw;
+    padding: 4% 8% 8% 4%;
     .cooler {
         text-align: center;
+        position: static;
         img{
            height: auto;
            width: 100%;
@@ -116,9 +121,12 @@
     }
     .contesttext {
         text-align: left;
+        position: static;
+        padding-right: 3%;
+        height: 100%;
         h3{
             color: @brand-text;
-            font-size: 1.3em;
+            font-size: 1.5em;
             text-transform: uppercase;
         }
         h2 {
@@ -128,21 +136,33 @@
         }
         #register {
             background-color: #404042;
-            width: 40%
+            width: 40%;
             height: 60px;
             border-radius: @borderradius;
             font-size: 1.2em;
         }
-    }
+         #register:hover{
+            background-color: white;
+            color: #404042;
+            border: 1px #404042 solid;
+            box-shadow: 2px 2px 6px #404042 @brand-secondary;
+            }
+        }
+    
 }
-
+@hero2height: 550px;
 .hero2 {
     background-image: url(../../images/home/bkgrnd.svg);
-    width: 100%;
-    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-width: 100%;
+    min-width: 100vw;
+    min-height: @hero2height;
+    
     .hero2text{
         text-align:center;
-        padding-top: 10%;
+        padding-top: 5%;
         h2{
             color: @brand-primary;
             font-size: 2.3em;
@@ -150,6 +170,8 @@
         p {
             color: @brand-secondary-text;
             line-height: 2em;
+            font-size: 1.3em;
+            font-family: Roboto;
         }
     }
     #hero2button{
@@ -161,14 +183,92 @@
         width: 50%
     }
    .hero2img{
+       float: left;
        text-align:center;
-       img{
+       .phone{
         height: auto;
-        max-height: 650px;
-        width: auto;
+        max-height: @hero2height;
 
        }
    } 
+}
+
+.features {
+    background-color: #D3D3D3;
+    height: 1300px;
+    width: 100%;
+    text-align: center;
+    h1 {
+        color: @brand-primary;
+        font-weight: bolder;
+        font-size: 4.5em;
+    }
+    .featurewindows{
+        min-height: 450px;
+        height: 500px;
+        .window{
+            background-color: white;
+            box-shadow: 6px 6px 6px @brand-text;
+            margin-left: 3%;
+            margin-right: 3%;
+            margin-top: 3%;
+            padding-top: 15px;
+            min-height: auto;
+            width: 27.3%;
+            border-radius: @borderradius;
+            text-align: center;
+             img{
+                max-height: 50%;
+                width: 90%;
+                padding-top: 5%;
+            }
+            .featurestext{
+                height: 200px;
+                h4{
+                    font-size: 1.5em;
+                    line-height: 2em;
+                    height: 25%;
+                    bottom: 0;
+                }
+                p {
+                    margin-left: 15%;
+                    margin-right: 15%;
+                    line-height: 2em;
+                    font-family: Roboto;
+                    bottom:0;
+                }
+            }
+        }
+    }
+    .contactarea {
+        clear:both;
+        h4{
+            color: @brand-primary;
+            font-size: 1.3em;
+            font-weight: bolder;
+            font-family: Roboto;
+        }
+        input{
+            width: 65%;
+            height: 40px;
+            background-color: white;
+            border-radius: @borderradius;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        button{
+            width: 200px;
+            text-align: center;
+            height: 60px;
+            background-color: #404042;
+            color: white;
+            font-family: Roboto;
+            border-radius: @borderradius;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 25px;
+        }
+    }
 }
 
 

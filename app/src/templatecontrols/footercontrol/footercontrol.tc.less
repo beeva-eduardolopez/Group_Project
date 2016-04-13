@@ -18,6 +18,7 @@
 #footer {
     clear: both;
     position: relative;
+    bottom: 0;
     
 }
 #footermain{
@@ -44,8 +45,26 @@
             }
         }
     }
-    .text {
-        text-align: center;
+    .text { 
+        height: @mainheight;
+        ul{
+            text-align: center;
+            list-style: none;
+            text-decoration: none;
+            li{
+                display: inline;
+                color: #354B68;
+                font-family: WorkSans;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            li:first-child:after{
+                content: "   |";
+            }
+            li:nth-child(3):after{
+                content: "   |";
+            }
+        }
     }
     .contact {
         text-align:center;
@@ -74,3 +93,22 @@
         ;
     }
 }
+<<<<<<< HEAD
+
+.contact{
+    height: 100%;
+    button{
+        background-color: @brand-tertiary;
+        color: white;
+        font-family: Roboto;
+        height: 60px;       
+        width: 60%;
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+        margin-top: 35%;
+    }
+}
+
+=======
+>>>>>>> 87c0e5ea8b118b8df21bb54ba83bcd6fa88a1e6d
