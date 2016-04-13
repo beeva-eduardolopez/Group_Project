@@ -39,6 +39,7 @@
     height: @box-height;
     margin-left: @containerpad;
     margin-right: @containerpad;
+    width: 80%;
     top: 0;
 
 }
@@ -50,9 +51,8 @@
     text-align:center;   
     .phoneimg{ 
     height: @heroheight;
-    vertical-align: bottom;
     #phn {
-        position: relative;
+        
         margin-top: 30px;
         margin-left: @containerpad;
         margin-right:@containerpad;
@@ -105,13 +105,14 @@
 
 .spacer {
     background-color: white;
-    overflow: hidden;
+    overflow: auto;
     min-height: 400px;
     width: 100%;
     width: 100vw;
     padding: 4% 8% 8% 4%;
     .cooler {
         text-align: center;
+        position: static;
         img{
            height: auto;
            width: 100%;
@@ -120,6 +121,7 @@
     }
     .contesttext {
         text-align: left;
+        position: static;
         padding-right: 3%;
         height: 100%;
         h3{
@@ -203,7 +205,7 @@
     }
     .featurewindows{
         min-height: 450px;
-        height: 450px;
+        height: 500px;
         .window{
             background-color: white;
             box-shadow: 6px 6px 6px @brand-text;
@@ -211,7 +213,7 @@
             margin-right: 3%;
             margin-top: 3%;
             padding-top: 15px;
-            height: auto;
+            min-height: auto;
             width: 27.3%;
             border-radius: @borderradius;
             text-align: center;
@@ -264,17 +266,9 @@
             border-radius: @borderradius;
             display: block;
             margin: 0 auto;
+            margin-bottom: 25px;
         }
     }
-}
-.blank{
-    color: transparent;
-}
-
-.space {
-    height: 30px;
-    width:100%;
-    float: left;
 }
 
 
