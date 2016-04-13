@@ -9,15 +9,44 @@
 }
 
 
-.container {
-    background-color: #f1f2f2;;
-    margin: 0;
-}
+.videos {
+    background-color: #f1f2f2;
+    margin-bottom: 15em;
+    .container {
+        padding: 1em;
+    }
+        
+    .tile {
+        
+        margin: 1em;
+        background-color: white;
+        img {
+            width: 100%;
+            
+        }
+        .description {
+            text-align: left;
+            padding-left: 1em;
+            margin: 0 auto;
+            font-family: WorkSans;
+            
+            h4 {
+                color: @brand-primary;
+                font-size: 2em;
+                font-weight: bold;
+                padding: 0;
+            }
+            
+            p {
+                color: @brand-text;
+            }
+            
+            
+        }
+    }
 
-.tile-container {
-    background-color: white;
-    border-bottom: 1px solid black;
+    h3 {
+        text-align: left;
+        color: gray;
+        }
 }
-    
-    
-    
