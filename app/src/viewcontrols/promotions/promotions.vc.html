@@ -25,9 +25,9 @@
                                 <h6 class="text-center blue">Please enter your registration information:</h6>
                                 <div>
                                     <div class="register-input-container">
-                                        <input type="text" placeholder="First and Last Name" name="Name" class="main-input" plat-bind="name">
-                                        <input type="email" placeholder="Email" name="email" class="main-input" plat-bind="email">
-                                        <input type="number" placeholder="Zip" name="zip" class="half-input" plat-bind="zip">
+                                        <input type="text" placeholder="First and Last Name" name="Name" class="main-input" plat-bind="name"></input>
+                                        <input type="email" placeholder="Email" name="email" class="main-input" plat-bind="email"></input>
+                                        <input type="text" placeholder="Zip" name="zip" class="half-input" plat-bind="zip"></input>
                                         <select plat-bind="team" class="selector">
                                             <option value="" default selected>Favorite Team</option>
                                             <option value="Alabama">Alabama</option>
@@ -46,7 +46,6 @@
                             </div>
                         </section>
                     </plat-modal>
-
                 </div>
             </div>
             <div class="register-image col-dsk-6">
@@ -56,4 +55,35 @@
 
     </div>
 
+</section>
+
+
+<section class="register-modal-phn hide-on-tab show-on-phn">
+    <div class="modal-prompt">
+        <p plat-tap="hide" class="close ">X</p>
+        <div class="register-modal-container ">
+            <h6 class="text-center blue ">Please enter your registration information:</h6>
+            <div>
+                <div class="register-input-container ">
+                    <input type="text " placeholder="First and Last Name" name="Name " class="main-input" plat-bind="name"></input>
+                    <input type="email " placeholder="Email " name="email " class="main-input" plat-bind="email"></input>
+                    <input type="text " placeholder="Zip " name="zip" class="main-input" plat-bind="zip"></input>
+                    <select plat-bind="team " class="selector-phn">
+                        <option value=" " default selected>Favorite Team</option>
+                        <option value="Alabama ">Alabama</option>
+                        <option value="Auburn ">Auburn</option>
+                    </select>
+                </div>
+
+                <p class="text-center grey ">Enter the above text fields and click register to enter the Free Yeti Cooler or Apple Watch Promotion. This
+                    promotion runs through April 17. You will receive a confirmation email after your registration has been
+                    processed.
+                </p>
+                <div class="clear ">
+                    <plat-button class="register-button-phn">REGISTER</plat-button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </section>
