@@ -10,7 +10,6 @@ export default class PromotionsViewControl extends BaseViewControl {
     context: any = {
         showModal: false,
         name: '',
-        last: '',
         email: '',
         zip: '',
         team:''
@@ -19,7 +18,6 @@ export default class PromotionsViewControl extends BaseViewControl {
     toggleModal() {
         this.context.showModal = !this.context.showModal;
         this.context.name = '';
-        this.context.last = '';
         this.context.email = '';
         this.context.zip = '';
         this.context.team = '';
