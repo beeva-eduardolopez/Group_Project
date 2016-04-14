@@ -17,8 +17,8 @@ export default class MyApp extends App {
             { pattern: 'about', view: AboutViewControl },
             { pattern: 'promotions', view: PromotionsViewControl },
             { pattern: 'howtoplay', view: HowToPlayViewController },
-            { pattern: 'howtoplay/overview', view: OverviewViewController },
-            { pattern: 'howtoplay/videos', view: VideosViewController }
+            { pattern: 'overview', view: OverviewViewController },
+            { pattern: 'videos', view: VideosViewController }
         ]);
     }
 
