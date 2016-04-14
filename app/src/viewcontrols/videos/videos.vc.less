@@ -43,69 +43,76 @@
 
 .videos {
     background-color: #f1f2f2;
-    margin-bottom: 20em;
+    margin-bottom: 25em;
     .container {
         padding: 1em;
             h3 {
                 margin-left: .5em;
-                margin-bottom: 0;
+                bottom: 0;
                 font-size: 2em;
                 font-family: Roboto Condensed;
                 color: @brand-text;
             }
+            
+            .row {
+                bottom: 10px;
+            }
     }
-        
-    .tile {
-        
-        margin: 1em;
-        background-color: white;
-        border-bottom: 2px solid #a0a2a5;
-        
-        img {
-            width: 100%;
-            
-        }
-        .description {
-            text-align: left;
-            padding: 1em;
-            margin: 0 auto;
-            font-family: WorkSans;
-            
-            .videos-button {
-                text-align: center;
-                
-                
-                .button-neutral {
-                    color: white;
-                    background-color: #39393a;
-                    padding: 10px 10px;
-                    width: 80%;
-                    border: transparent;
-                    border-radius: 5px;
-                    text-transform: uppercase;
-                    font-size: 1em;
-                    font-family: WorkSans Regular;
-                }
-            }
-            
-            
-            h4 {
-                color: @brand-primary;
-                font-size: 2em;
-                font-family: WorkSans ExtraBold;
-                padding: 0;
-            }
-            
-            p {
-                color: @brand-text;
-                font-family: WorkSans Regular;
-                font-weight: 100;
-                font-size: 1em;
-            }
-            
-            
-        }
-    }
-
-    
 }
+        
+.tile {
+    margin: 10px;
+    background-color: white;
+    border-bottom: 2px solid #a0a2a5;
+    height: 400px;
+    
+    img {
+        width: 100%;
+    }
+    
+    .description {
+        
+        text-align: left;
+        font-family: WorkSans;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        h4 {
+            color: @brand-primary;
+            font-size: 2em;
+            font-family: WorkSans ExtraBold;
+        }
+
+        p {
+            height: 10px;
+            color: @brand-text;
+            font-family: WorkSans Regular;
+            font-weight: 100;
+            font-size: 1em;
+        }
+        
+        .videos-button {
+            width: 100%;
+            position: absolute;
+            bottom: 50px;
+            margin-left: 10px;
+        
+            .button-neutral {
+                color: white;
+                background-color: #39393a;
+                padding: 10px 10px;
+                width: 80%;
+                border: transparent;
+                border-radius: 5px;
+                text-transform: uppercase;
+                font-size: 1em;
+                font-family: WorkSans Regular;
+            }
+        }  
+    }
+}
+        
+            
+            
+
+   
