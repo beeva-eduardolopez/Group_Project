@@ -40,72 +40,7 @@
     src: url(../../fonts/WorkSans/WorkSans-ExtraBold.woff);
 }
 
-.text-container {
-    text-align: center;
-    margin-left: 2em;
-    margin-top: 2em;
-    width: 50%;
-    padding-left: 2em;
-    padding-right: 2em;
-    
-    h3 {
-        color: #3c3c3c;
-        font-size: 2em;
-        text-transform: uppercase;
-        font-family: WorkSans ExtraBold;
-    }
-    
-    h4 {
-        font-family: WorkSans ExtraBold;
-        font-size: 1.5em;
-        color: #a0a2a5;
-        font-weight: bolder;
-        padding: 0;
-        text-align: center;
-        margin: 0 auto;
-        display: block;
-    }
-}
 
-.mail {
-        margin-top: 3em;
-        margin-left: 2em;
-        padding-left: 2em;
-        margin-bottom: 0;
-        text-align: center;
-        width: 50%;
-    
-    .btn {
-        background-color: #2b2c2e;
-        margin-top: 1em;
-        width: 50%;
-        height: 4em;
-        text-transform: uppercase;
-        font-family: Roboto Condensed;
-        letter-spacing: 2px;
-        border-radius: 5px;
-    }
-
-    
-    .email {
-        // width: 50%;
-        // display: block;
-        text-align: center;
-        
-        .emailInput { 
-            text-align: left;
-            border: 1px solid #a6a8ab;
-            border-radius: 5px;
-            font-size: 1.5em;
-            font-family: WorkSans Regular;
-            background-color: #fff;
-            color: #404042;
-            height: 2em;
-            padding: 10px;
-            width: 100%;            
-        } 
-    }
-}
 
 
     
@@ -140,7 +75,7 @@
     
     
     
-    p{
+    p {
         color: #95989b;
         font-family: WorkSans Regular;
     }
@@ -163,26 +98,6 @@
     color: @brand-tertiary;
 }
 
-
-.subscription-row{
-    img{
-        float: right;
-    }
-}
-
-// .text-container{
-//     text-align: center;
-//     width: 50%;
-//     margin-left: 2em;
-    
-//     h4{
-//         font-family: WorkSans;
-//         font-weight: bold;
-//     }
-// }
-
-
-
 .numberCircle {
     font-family: WorkSans;
     font-weight: bolder;
@@ -202,16 +117,71 @@
     
     background-color: white;
     img {
-        margin-right: 10em;
+        margin-left: 10em;
+    }
+    
+    .mail {
+        margin-top: 3em;
+        margin-right: 100px;
+    
+        .btn {
+            background-color: #2b2c2e;
+            margin-top: 1em;
+            width: 50%;
+            height: 4em;
+            text-transform: uppercase;
+            font-family: Roboto Condensed;
+            letter-spacing: 2px;
+            border-radius: 5px;
+        }
+
+        
+        .email {
+            
+            .emailInput { 
+                text-align: left;
+                border: 1px solid #a6a8ab;
+                border-radius: 5px;
+                font-size: 1.5em;
+                font-family: WorkSans Regular;
+                background-color: #fff;
+                color: #404042;
+                height: 2em;
+                width: 100%;            
+            } 
+        }
+        
+    }
+    
+    .text-container {
+        text-align: left;
+        margin-right: 100px;
+    
+        h3 {
+            color: #3c3c3c;
+            font-size: 2em;
+            text-transform: uppercase;
+            font-family: WorkSans ExtraBold;
+        }
+        
+        h4 {
+            font-family: WorkSans ExtraBold;
+            font-size: 1.5em;
+            color: #a0a2a5;
+            font-weight: bolder;
+            padding: 0;
+            margin: 0 auto;
+            display: block;
+        }
     }
     
     #contests {
-        margin-left: 10em;
-        display: inline-block;
-        margin-top: 2em;
-        text-align: left;
-        line-height: 2em;
-        width: 80%;
+    margin-left: 10em;
+    display: inline-block;
+    margin-top: 2em;
+    text-align: left;
+    line-height: 2em;
+    width: 80%;
         h5 {
             color: @brand-primary;
             font-family: WorkSans ExtraBold;
@@ -228,3 +198,5 @@
         }
     }
 }
+
+
