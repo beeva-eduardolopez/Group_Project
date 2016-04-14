@@ -8,45 +8,103 @@
     }
 }
 
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(../../../fonts/Roboto/Roboto-Condensed.otf);
+    src: url(../fonts/Roboto/Roboto-Condensed.ttf);
+    src: url(../fonts/Roboto/Roboto-Condensed.woff); 
+}
+@font-face {
+    font-family: 'Roboto Bold Condensed';
+    src: url(../fonts/Roboto/Roboto-BoldCondensed.otf);
+    src: url(../fonts/Roboto/Roboto-BoldCondensed.ttf);
+    src: url(../fonts/Roboto/Roboto-BoldCondensed.woff);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'WorkSans Regular';
+    src: url(../fonts/WorkSans/WorkSans-Regular.otf);
+    src: url(../fonts/WorkSans/WorkSans-Regular.ttf);
+    src: url(../fonts/WorkSans/WorkSans-Regular.woff);
+    
+}
+@font-face {
+    font-family: 'WorkSans SemiBold';
+    src: url(../fonts/WorkSans/WorkSans-SemiBold.otf);
+    src: url(../fonts/WorkSans/WorkSans-SemiBold.ttf);
+    src: url(../fonts/WorkSans/WorkSans-SemiBold.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'WorkSans ExtraBold';
+    src: url(../fonts/WorkSans/WorkSans-ExtraBold.otf);
+    src: url(../fonts/WorkSans/WorkSans-ExtraBold.ttf);
+    src: url(../fonts/WorkSans/WorkSans-ExtraBold.woff);
+    font-weight: bolder;
+}
+
 
 .videos {
     background-color: #f1f2f2;
-    margin-bottom: 15em;
+    margin-bottom: 20em;
     .container {
         padding: 1em;
+            h3 {
+                margin-left: .5em;
+                margin-bottom: 0;
+                font-size: 2em;
+                font-family: Roboto Condensed;
+                color: @brand-text;
+            }
     }
         
     .tile {
         
         margin: 1em;
         background-color: white;
+        border-bottom: 2px solid #a0a2a5;
         img {
             width: 100%;
             
         }
         .description {
             text-align: left;
-            padding-left: 1em;
+            padding: 1em;
             margin: 0 auto;
             font-family: WorkSans;
+            
+            .videos-button {
+                text-align: center;
+                
+                
+                .button-neutral {
+                    background-color: #39393a;
+                    padding: 15px 30px;
+                    border-radius: 10px;
+                    text-transform: uppercase;
+                    font-family: WorkSans Regular;
+                }
+            }
+            
             
             h4 {
                 color: @brand-primary;
                 font-size: 2em;
-                font-weight: bold;
+                font-family: WorkSans ExtraBold;
                 padding: 0;
             }
             
             p {
                 color: @brand-text;
+                font-family: WorkSans Regular;
+                font-weight: 100;
+                font-size: 1em;
             }
             
             
         }
     }
 
-    h3 {
-        text-align: left;
-        color: gray;
-        }
+    
 }
