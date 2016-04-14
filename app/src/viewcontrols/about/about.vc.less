@@ -15,6 +15,45 @@
     }
 }
 
+@font-face {
+    font-family: 'WorkSans ExtraLight';
+    src: url(../../fonts/WorkSans/WorkSans-ExtraLight.otf);
+    src: url(../../fonts/WorkSans/WorkSans-ExtraLight.ttf);
+    src: url(../../fonts/WorkSans/WorkSans-ExtraLight.woff);
+}
+
+@font-face {
+    font-family: 'WorkSans ExtraBold';
+    src: url(../../fonts/WorkSans/WorkSans-ExtraBold.otf);
+    src: url(../../fonts/WorkSans/WorkSans-ExtraBold.ttf);
+    src: url(../../fonts/WorkSans/WorkSans-ExtraBold.woff);
+}
+
+@font-face {
+    font-family: 'WorkSans Regular';
+    src: url(../../fonts/WorkSans/WorkSans-Regular.otf);
+    src: url(../../fonts/WorkSans/WorkSans-Regular.ttf);
+    src: url(../../fonts/WorkSans/WorkSans-Regular.woff);   
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(../../fonts/Roboto/Roboto-Condensed.otf);
+    src: url(../../fonts/Roboto/Roboto-Condensed.ttf);
+    src: url(../../fonts/Roboto/Roboto-Condensed.woff);
+}
+
+.top{
+    position: relative;
+    width:100%;
+    height: 100px;
+    vertical-align:middle;
+    h2{
+        text-align: center;
+        font-family: WorkSans ExtraLight;
+    }
+}
+
 .container-story{
     margin-left: 9%;
     margin-right: 2%
@@ -48,11 +87,17 @@
     h3{
          font-size: 1.4em;
          text-transform: uppercase;
+         font-family: WorkSans ExtraBold;
     }
     
     h4{
         color: @brand-text;
         font-size: 1.4em;
+        font-family: WorkSans ExtraBold;
+    }
+    
+    p{
+        font-family: WorkSans Regular;
     }
 
 }
@@ -67,15 +112,20 @@
     padding-left: 2em;
     padding-right: 2em;
     background-color: black;
+    border-radius: @borderradius;
 }
 
 .about-subscribe{
     background-color:#2d97d2;
     padding: 1em 18%;
     height: 12em;
+    p{
+        font-family: Roboto Condensed;
+    }
 }
 .subs{
     padding-top: 1em;
+    font-family: WorkSans Regular;
 }
 
 .team{
@@ -87,10 +137,12 @@
     
     h2{
         color: @brand-tertiary;
+        font-family: WorkSans ExtraBold;
     }
     
     p{
         color: @brand-text;
+        font-family: Roboto Condensed;
     }
     
 }
@@ -100,9 +152,19 @@
      padding: 1em 18%;
      
      h2{
+          font-family: WorkSans ExtraBold;
         color: @brand-tertiary;
     }
+    p{
+        color: @brand-text;
+        font-family: Roboto Condensed;
+    }
 
+}
+
+.team-para{
+     color: @brand-text;
+     font-family: WorkSans Regular;
 }
 
 .text-center-fantasy{
@@ -124,12 +186,15 @@
         color: @brand-secondary;
     h3{
         color:@brand-primary;
+        font-family: WorkSans ExtraBold;
     }
     h4{
         color:@brand-text;
+        font-family: WorkSans ExtraBold;
     }
     p{
-        color: black;
+        color:@brand-text;
+        font-family: WorkSans Regular;
     }
  
 }
