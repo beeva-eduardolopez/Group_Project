@@ -10,7 +10,37 @@
     }
 }
 
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(../../fonts/Roboto/Roboto-Condensed.otf);
+    src: url(../../fonts/Roboto/Roboto-Condensed.ttf);
+    src: url(../../fonts/Roboto/Roboto-Condensed.woff); 
+}
+@font-face {
+    font-family: 'Roboto Bold Condensed';
+    src: url(../../fonts/Roboto/Roboto-BoldCondensed.otf);
+    src: url(../../fonts/Roboto/Roboto-BoldCondensed.ttf);
+    src: url(../../fonts/Roboto/Roboto-BoldCondensed.woff);
+}
+@font-face {
+    font-family: 'WorkSans Regular';
+    src: url(../../fonts/WorkSans/WorkSans-Regular.otf);
+    src: url(../../fonts/WorkSans/WorkSans-Regular.ttf);
+    src: url(../../fonts/WorkSans/WorkSans-Regular.woff);   
+}
+@font-face {
+    font-family: 'WorkSans SemiBold';
+    src: url(../../fonts/WorkSans/WorkSans-SemiBold.otf);
+    src: url(../../fonts/WorkSans/WorkSans-SemiBold.ttf);
+    src: url(../../fonts/WorkSans/WorkSans-SemiBold.woff);
+}
 
+@font-face {
+    font-family: 'WorkSans ExtraBold';
+    src: url(../../fonts/WorkSans/WorkSans-ExtraBold.otf);
+    src: url(../../fonts/WorkSans/WorkSans-ExtraBold.ttf);
+    src: url(../../fonts/WorkSans/WorkSans-ExtraBold.woff);
+}
 .howtoplay {
     color: #ffffff;
     height: 18em;
@@ -22,8 +52,7 @@
         font-size: 2.25em;
         color: white;
         text-align: center;
-        font-family: WorkSans;
-        font-weight: light;
+        font-family: WorkSans Regular;
     }
 }
 
@@ -41,11 +70,18 @@
     margin: auto;
     border-bottom: 2px solid #c3c4c2;
     
+    
     .tabs-container {
-        line-height: 3em;
-        font-size: 1em;
-        font-family: WorkSans;
+        font-size: 1.5em;
+        font-family: WorkSans SemiBold;
         text-align: center;
+        .row {
+            line-height: 2em;
+            margin: 0 auto;
+        }
+        a {
+            color: #a0a2a5;
+        }
     }
 }
 
