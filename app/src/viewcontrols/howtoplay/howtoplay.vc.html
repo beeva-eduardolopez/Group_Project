@@ -3,18 +3,18 @@
         <h2 id="how-to-play">HOW TO PLAY</h2>
     </div>
 </div>
-<section class="tabs">
+<div class="tabs">
     <div class="tabs-container">
         <div class="row">
-            <div class="col-dsk-6">
-                <a plat-tap="showO()">Overview</a>
+            <div style="background-color:{{colorOver}}" class="col-dsk-6">
+                <a plat-control="plat-link" plat-tap="showO()">Overview</a>
             </div>
-            <div class="col-dsk-6">
-                <a plat-tap="showV()">Videos</a>
+            <div style="background-color:{{colorVideos}}" class="col-dsk-6">
+                <a plat-control="plat-link" plat-tap="showV()">Videos</a>
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <div plat-visible="{{showOver}}">
     <div class="subscription">
@@ -228,5 +228,4 @@
             </div>
         </div>
     </div>
-
 </div>

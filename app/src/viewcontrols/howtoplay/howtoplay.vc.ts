@@ -10,17 +10,23 @@ export default class HowtoplayViewControl extends BaseViewControl {
 
     context: any = {
         showOver: true,
-        showVideos: false
+        showVideos: false,
+        colorOver: "grey",
+        colorVideos: "white"
     };
-    
+
     showO() {
         this.context.showOver = !this.context.showOver;
         this.context.showVideos = !this.context.showVideos;
+        this.context.colorOver = "grey";
+        this.context.colorVideos = "white";
     }
-    
-    showV(){
-         this.context.showVideos = !this.context.showVideos;
-         this.context.showOver = !this.context.showOver; 
+
+    showV() {
+        this.context.showVideos = !this.context.showVideos;
+        this.context.showOver = !this.context.showOver;
+        this.context.colorVideos = "grey";
+        this.context.colorOver = "white";
     }
 }
 
