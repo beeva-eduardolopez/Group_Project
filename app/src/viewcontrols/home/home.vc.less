@@ -1,7 +1,7 @@
 @import "main.less";
 
 * {
-    font-family: WorkSans;
+    font-family: 'WorkSans Regular';
 }
 & {
     #platui > #media;
@@ -12,6 +12,7 @@
 
     }
 }
+
 #platui {
     #grid {
         @base-percent: 100%;
@@ -24,13 +25,15 @@
 
 
 // First Section : ARE YOU IN?
+
 .hero {
-    background-image: url("../../images/home/coversharks-web-hero.jpg");
+    overflow: auto;
+    background-image: url(../../images/home/coversharks-web-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     width: 100vw;
-    height: @heroheight;
+    min-height: @heroheight;
 }
 
 #areyouin {
@@ -40,8 +43,7 @@
     margin-left: @containerpad;
     margin-right: @containerpad;
     width: 80%;
-    top: 0;
-
+    top: 0
 }
 
 
@@ -50,14 +52,13 @@
     color: white;
     text-align:center;   
     .phoneimg{ 
-    height: @heroheight;
-    #phn {
-        
-        margin-top: 30px;
-        margin-left: @containerpad;
-        margin-right:@containerpad;
-        margin-bottom: 0;
-        padding-bottom: 0;
+        height: @heroheight;
+        #phn {
+            margin-top: 30px;
+            margin-left: @containerpad;
+            margin-right:@containerpad;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
     }
     .herotext{
@@ -69,14 +70,12 @@
             font-size: 3.4em;
             padding: 0;
             text-transform: uppercase;
-            font-family: WorkSans;
-            font-weight: bolder;
-            
+            font-family: 'WorkSans ExtraBold';   
         }
         p{  
             clear: both;
-            font-family: Roboto;
-            font-weight: bolder;
+            font-family: 'Roboto Condensed';
+
             font-size: 1.3em;
             line-height: 2em;
             margin-top: 10px;
@@ -89,9 +88,8 @@
             color: black;
             width: 40%;
             height: 60px;
-            font-family: WorkSans;
             font-size: 1.3em;
-            font-weight: 800;
+            font-family: 'WorkSans ExtraBold';
         }
         button:hover{
             background-color:@brand-primary;
@@ -105,33 +103,35 @@
 
 .spacer {
     background-color: white;
-    overflow: auto;
     min-height: 400px;
     width: 100%;
     width: 100vw;
-    padding: 4% 8% 8% 4%;
-    .cooler {
-        text-align: center;
-        position: static;
-        img{
-           height: auto;
-           width: 100%;
-           text-align: center;
+    margin-top: 5%;
+    .imgcontainer{
+        height: 400px;
+
+        .coolerimg {
+            margin-top: -10%;
+            text-align: center;
+            width: 100%;
+            height: auto;
         }
     }
     .contesttext {
+        @media (max-width: 900px) {
+            text-align: center;
+        }
         text-align: left;
-        position: static;
-        padding-right: 3%;
-        height: 100%;
         h3{
             color: @brand-text;
-            font-size: 1.5em;
+            font-size: 1em;
+            font-family: 'Roboto Bold Condensed';
             text-transform: uppercase;
         }
         h2 {
             color: @brand-tertiary;
-            font-size: 3em;
+            font-family: 'WorkSans ExtraBold';
+            font-size: 2em;
             text-transform: uppercase;
         }
         #register {
@@ -150,7 +150,15 @@
         }
     
 }
-@hero2height: 550px;
+
+
+
+
+//THIRD SECTION:  CHOOSE HOW YOU WANT TO PLAY 
+
+
+
+@hero2height: 450px;
 .hero2 {
     background-image: url(../../images/home/bkgrnd.svg);
     background-size: cover;
@@ -171,7 +179,7 @@
             color: @brand-secondary-text;
             line-height: 2em;
             font-size: 1.3em;
-            font-family: Roboto;
+            font-family: 'Roboto Condensed';
         }
     }
     #hero2button{
@@ -193,11 +201,15 @@
    } 
 }
 
+
+//FOURTH SECTION: GAME FEATURES AND CONTACT AREA
+
 .features {
     background-color: #D3D3D3;
-    height: 1300px;
+    min-height: 500px;
     width: 100%;
     text-align: center;
+    overflow: auto;
     h1 {
         color: @brand-primary;
         font-weight: bolder;
@@ -234,7 +246,7 @@
                     margin-left: 15%;
                     margin-right: 15%;
                     line-height: 2em;
-                    font-family: Roboto;
+                    font-family: 'Roboto Condensed';
                     bottom:0;
                 }
             }
@@ -245,8 +257,8 @@
         h4{
             color: @brand-primary;
             font-size: 1.3em;
-            font-weight: bolder;
-            font-family: Roboto;
+
+            font-family: 'Roboto Bold Condensed';
         }
         input{
             width: 65%;
@@ -262,7 +274,7 @@
             height: 60px;
             background-color: #404042;
             color: white;
-            font-family: Roboto;
+            font-family: 'Roboto Condensed';
             border-radius: @borderradius;
             display: block;
             margin: 0 auto;
