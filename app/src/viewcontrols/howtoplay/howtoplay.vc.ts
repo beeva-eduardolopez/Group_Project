@@ -8,7 +8,20 @@ import PromotionsViewControl from '../../viewcontrols/promotions/promotions.vc';
 export default class HowtoplayViewControl extends BaseViewControl {
     templateString: string = require('./howtoplay.vc.html');
 
-    context: any = {};
+    context: any = {
+        showOver: true,
+        showVideos: false
+    };
+    
+    showO() {
+        this.context.showOver = !this.context.showOver;
+        this.context.showVideos = !this.context.showVideos;
+    }
+    
+    showV(){
+         this.context.showVideos = !this.context.showVideos;
+         this.context.showOver = !this.context.showOver; 
+    }
 }
 
 register.viewControl('howtoplay-vc', HowtoplayViewControl);
