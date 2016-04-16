@@ -14,11 +14,21 @@ context: any = {
     showNavbar: false
 };
 
-initialize(): void {
-    this.on('navigated', (ev: events.DispatchEvent, utils: web.UrlUtils) => {
-        this.drawerController.control.close();
-        
+toggleNavbar() {
+    this.context.showNavbar = !this.context.showNavbar
+}
+
+cssScroll() {
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 200) {
+            $(".navbar").addClass("scrolled");
+        } else {
+            $(".clearHeader").removeClass("scrolled");
+        }
     });
+    
 }
 }
 

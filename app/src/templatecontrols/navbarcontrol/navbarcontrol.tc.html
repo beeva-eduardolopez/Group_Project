@@ -1,12 +1,16 @@
-<div class="navbar">
+<div class="navbar" id="navBar">
     <div class="row">
         <div class="brand col-tab-3 hide-on-tab">
             <plat-link plat-options="{ view: '' }">
-                 <img id="brandimg" src="../../images/home/logo-color.svg">
+                 <img id="brandImg" src="../../images/home/logo-color.svg">
             </plat-link>
         </div>
         <div class="brand col-phn-3 hide-above-tab">
-            <img id="mobilebrand" src="../../images/home/logo-blue.svg">
+            
+            <plat-link plat-options="{ view: '' }">
+                 <img id="mobilebrand" src="../../images/home/logo-blue.svg">
+            </plat-link>
+            
         </div>
         <div class="pagelinks col-tab-7 hide-on-tab">
             <ul class="pages">
@@ -29,6 +33,26 @@
             </a>
             </span>
         </div>
-        <plat-drawer-controller class="hide-above-tab col-phn-2 col-phn-offset-7 drawerbars" >|||</plat-drawer-controller>
+        <div class="hide-above-tab col-phn-2 col-phn-offset-7 drawerbars" plat-tap="toggleNavbar()" >|||</div>
     </div>
 </div>
+
+<plat-modal plat-options="{ transition: 'down' }" plat-bind="showNavbar">
+    
+    <div class="modalcontainer">
+        <p plat-tap="hide" class="close">&#10006;</p>
+        <div class="drawerlogo">
+            <img src="../../images/home/logo-white.svg">
+        </div>
+        <ul id="drawerpages">
+            <li><plat-link plat-tap="hide" plat-options="{ view: '' }">HOME</plat-link></li>
+            <li><plat-link plat-tap="hide" plat-options="{ view: 'howtoplay-vc' }">How To Play</plat-link></li>
+            <li ><plat-link plat-tap="hide" plat-options="{ view: 'about-vc' }">About</plat-link></li>
+            <li><plat-link plat-tap="hide" plat-options="{ view: 'promotions-vc' }">Promotions</plat-link></li>
+        </ul>
+        <div class="drawerlinks">
+            <img src="../../images/home/fb-white.svg">
+            <img src="../../images/home/twitter-white.svg">
+        </div>
+    </div>
+</plat-modal>
