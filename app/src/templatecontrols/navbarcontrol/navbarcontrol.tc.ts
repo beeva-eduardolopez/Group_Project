@@ -17,19 +17,19 @@ context: any = {
 toggleNavbar() {
     this.context.showNavbar = !this.context.showNavbar
 }
+// Potential use for transparent scroll. Currently not in use due to JQuery difficulties. 
+// cssScroll() {
+//     $(window).scroll(function(){
+//         var scroll = $(window).scrollTop();
 
-cssScroll() {
-    $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 200) {
-            $(".navbar").addClass("scrolled");
-        } else {
-            $(".clearHeader").removeClass("scrolled");
-        }
-    });
+//         if (scroll >= 200) {
+//             $(".navbar").addClass("scrolled");
+//         } else {
+//             $(".clearHeader").removeClass("scrolled");
+//         }
+//     });
     
-}
+// }
 }
 
 register.control('navbarcontrol', NavbarcontrolTemplateControl);
