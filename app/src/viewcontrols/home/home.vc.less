@@ -78,7 +78,7 @@
             button:hover{
                 background-color:@brand-primary;
                 color:@brand-secondary-text;
-                box-shadow: 3px 3px 3px @brand-secondary;
+                
             } 
         }
         #phnsmall{
@@ -98,7 +98,7 @@
         color: white;
         text-align:center;   
         .phoneimg{ 
-            height: @heroheight;
+            max-height: @heroheight;
             #phn {
                 margin-top: 30px;
                 margin-left: @containerpad;
@@ -147,7 +147,7 @@
             button:hover{
                 background-color:@brand-primary;
                 color:@brand-secondary-text;
-                box-shadow: 3px 3px 3px @brand-secondary;
+                
             }   
         }
     }
@@ -157,29 +157,31 @@
 
 .spacer {
     background-color: white;
-    min-height: 400px;
+    min-height: 300px;
     width: 100%;
-    width: 100vw;
     margin-top: 5%;
     .imgcontainer{
         height: 100%;
-        overflow: auto;
         text-align: center;
-        .coolerimg {  
+        .coolerimg {
+            margin-top: -5%;
+            text-align: center;  
             height: 100%;
             width: 100%;
-            max-height: 400px;
-            max-width: 400px;          
+            max-height: 450px;
+            max-width: 450px;          
         }
     }
     .contesttext {
         @media (max-width: 900px) {
             text-align: center;
+            width: auto;
             h3{
                 color: @brand-text;
                 font-size: 2em;
                 font-family: 'Roboto Bold Condensed';
                 text-transform: uppercase;
+                
             }
             h2 {
                 color: @brand-tertiary;
@@ -193,6 +195,7 @@
             height: 60px;
             border-radius: @borderradius;
             font-size: 1.2em;
+            margin-bottom: 5%;
             }
             #register:hover{
                 background-color: white;
@@ -204,6 +207,7 @@
         }
         @media (min-width: 900px){
             text-align: left;
+            max-width: 400px;
             h3 {
                 color: @brand-text;
                 font-size: 1em;
@@ -265,16 +269,23 @@
             p {
                 color: @brand-secondary-text;
                 font-size: 1.3em;
-                font-family: 'Roboto Condensed';
+                font-family: 'WorkSans Regular';
             }
             #hero2button{
                 background-color: white;
                 border-radius: @borderradius;
-                color: black;
+                color: darken(@brand-text, 20%);
+                font-family: 'Roboto Condensed';
                 font-size: 1.2em;
                 height: 60px;
                 width: 50%;
             }
+            #hero2button:hover{
+                background-color:@brand-primary;
+                color:@brand-secondary-text;
+                box-shadow: 3px 3px 3px @brand-secondary;
+                font-family: 'Roboto Condensed';
+            } 
         }
         
     .hero2img{
@@ -315,9 +326,16 @@
                 background-color: white;
                 border-radius: @borderradius;
                 color: darken(@brand-text, 20%);
+                font-family: 'Roboto Condensed';
                 font-size: 1.2em;
                 height: 60px;
                 width: 80%;
+            }
+            #hero2button:hover{
+                background-color:@brand-primary;
+                color:@brand-secondary-text;
+                font-family: 'Roboto Condensed';
+                
             }
         }
     }
@@ -380,7 +398,6 @@
                         bottom: 0;
                     }
                     p {
-                        padding-top: 15%;
                         margin-left: 15%;
                         margin-right: 15%;
                         font-size: 1.5em;
@@ -467,6 +484,12 @@
                 margin: 0 auto;
                 margin-bottom: 25px;
             }
+            button:hover{
+                background-color: white;
+                color: #404042;
+                border: 1px #404042 solid;
+                
+            }
         }
         @media (min-width: 900px){
             clear:both;
@@ -494,6 +517,12 @@
                 display: block;
                 margin: 0 auto;
                 margin-bottom: 25px;
+            }
+            button:hover{
+                background-color: white;
+                color: #404042;
+                border: 1px #404042 solid;
+                
             }
         }
     }
